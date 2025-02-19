@@ -12,7 +12,7 @@ export default function Navbar() {
 
       <div className="h-[40px] w-screen bg-yellow-400 max-sm:bg-orange-600 flex justify-center items-center gap-3 text-white">
       <Link href="/" className="text-xl font-bold">Home</Link>
-      <img src="/home.png" width={30} height={30}>
+      <img src="/Home.png" width={30} height={30}>
      
       </img>
       </div>
