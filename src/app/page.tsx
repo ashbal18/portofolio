@@ -29,7 +29,7 @@ export default function Home() {
           />
         </header>
 
-        <h1 className='mb-10 text-2xl md:text-[30px] font-bold text-black'>I'm a Full Stack Web Developer, WordPress Development & UI/UX Design</h1>
+        <h1 className='mb-10 text-2xl md:text-[30px] font-bold text-black'>I am a Full Stack Web Developer, WordPress Development & UI/UX Design</h1>
         <p className='font-bold text-black text-sm md:text-base'>Saya seorang programmer yang berdedikasi dan berorientasi pada hasil dengan pengalaman dalam pengembangan perangkat lunak. Saya memiliki keahlian dalam berbagai bahasa pemrograman dan teknologi, dan saya selalu berusaha untuk memberikan solusi inovatif dan efisien.</p>
 
         <Marquee> {
