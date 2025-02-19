@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -9,7 +8,7 @@ export default function Profile(){
 
   <div className='flex flex-col md:flex-row bg-cover bg-center'>
     <div className="w-full w-1/2 flex justify-center items-center">
-      <Image src="/adobe.png" alt='foto' width={500} height={500} className="max-w-full h-auto" />
+      <img src="/adobe.png" alt='foto' width={500} height={500} className="max-w-full h-auto" />
     </div>
     <div className="w-full w-1/2 justify-center items-center p-20">
     <header className=' flex justify-center items-center mb-10'>

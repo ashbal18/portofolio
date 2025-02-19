@@ -1,10 +1,9 @@
-import Image from "next/image";
 
 const Contact = () => {
   return (
     <div className="bg-yellow-100 text-center py-12 px-6">
       <div className="flex flex-col items-center">
-        <Image
+        <img
           src="/fotosaya.jpg" 
           alt="Profile Picture"
           width={80}
