@@ -15,12 +15,12 @@ export default function Home() {
         <header className='flex justify-center items-center mb-10'>
           <TypeAnimation
             sequence={[
-              'Haloo Iam Web Development ',
-              1000,
+              'Haloo I am Web Development ',
+              500,
               'Welcome To My Portofolio',
-              1000,
+              500,
               'have a nice day',
-              1000,
+              500,
             ]}
             wrapper="span"
             speed={50}
@@ -29,8 +29,8 @@ export default function Home() {
           />
         </header>
 
-        <h1 className='mb-10 text-2xl md:text-[30px] font-bold text-black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nam?</h1>
-        <p className='font-bold text-black text-sm md:text-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit non quidem maiores dolorum corrupti nulla laborum ea veritatis veniam atque ipsa unde dolores assumenda optio tempora, sit molestias ducimus.</p>
+        <h1 className='mb-10 text-2xl md:text-[30px] font-bold text-black'>I'm a Full Stack Web Developer, WordPress Development & UI/UX Design</h1>
+        <p className='font-bold text-black text-sm md:text-base'>Saya seorang programmer yang berdedikasi dan berorientasi pada hasil dengan pengalaman dalam pengembangan perangkat lunak. Saya memiliki keahlian dalam berbagai bahasa pemrograman dan teknologi, dan saya selalu berusaha untuk memberikan solusi inovatif dan efisien.</p>
 
         <Marquee> {
             <div className="flex justify-center items-center gap-4 md:gap-20 m-4 md:m-10 mt-10"> 
