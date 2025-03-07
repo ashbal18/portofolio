@@ -58,17 +58,26 @@ export default function Home() {
 
       {/* Sidebar Social Icons */}
       <div className="fixed left-2 sm:left-4 top-1/2 transform -translate-y-1/2 space-y-3">
-        {[FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaBook].map(
-          (Icon, index) => (
-            <a
-              key={index}
-              href="#"
-              className="text-gray-600 hover:text-black text-xl sm:text-2xl transition duration-300"
-            >
-              <Icon />
-            </a>
-          )
-        )}
+        {[
+          {
+            Icon: FaLinkedin,
+            link: "https://www.linkedin.com/in/muhammad-ashbal-al-saddam-a21a2a303/",
+          },
+          { Icon: FaTwitter, link: "https://twitter.com/yourprofile" },
+          { Icon: FaYoutube, link: "https://www.youtube.com/c/yourchannel" },
+          { Icon: FaGithub, link: "https://github.com/ashbal18" },
+          { Icon: FaBook, link: "https://yourwebsite.com" },
+        ].map(({ Icon, link }, index) => (
+          <a
+            key={index}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-black text-xl sm:text-2xl transition duration-300"
+          >
+            <Icon />
+          </a>
+        ))}
       </div>
 
       {/* Chat Button */}

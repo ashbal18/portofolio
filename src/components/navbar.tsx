@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import Experience from "@/app/experience/page";
 import Skill from "@/app/skill/page";
 import Testimoni from "@/app/testimoni/page";
-import Home from "@/app/home/page";
+import Home from "@/app/hero/page";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,7 @@ export default function Navbar() {
         <div
           className={`absolute top-[60px] left-0 right-0 bg-white shadow-md flex flex-col items-center space-y-4 p-5 md:flex md:flex-row md:static md:shadow-none md:space-y-0 md:space-x-6 md:p-0 transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden"}`}
         >
-          <NavLink href="#home">Home</NavLink>
+          <NavLink href="#hero">Home</NavLink>
           <NavLink href="#about">About Me</NavLink>
           <NavLink href="#skill">Keterampilan</NavLink>
           <NavLink href="#portofolio">Portofolio</NavLink>
@@ -48,7 +48,7 @@ export default function Navbar() {
 
       {/* Konten Halaman */}
       <div className="  space-y-20 bg-gray-100">
-        <Section id="home" title="">
+        <Section id="hero" title="">
           <Home />
         </Section>
         <Section id="about" title="">

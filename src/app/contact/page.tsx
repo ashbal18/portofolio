@@ -1,6 +1,16 @@
 "use client"
 const Contact = () => {
   return (
+    <div
+    className="min-h-screen bg-gray-200 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 w-full"
+    style={{
+      backgroundImage: "url(/bgc.webp)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+    
     <div className="bg-gray-100 text-center py-12 px-6">
       <div className="flex flex-col items-center">
         <img
@@ -37,6 +47,7 @@ const Contact = () => {
           <p className="text-gray-500">Menara Asia Afrika</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="max-w-3xl mx-auto p-5">
-      <h2 className="text-2xl font-bold text-gray-800 mb-5">Pengalaman</h2>
+    <div className="max-w-3xl mx-auto p-5 ">
+      <h2 className="text-center text-2xl font-bold text-gray-800 mb-5">Pengalaman</h2>
       {[{
         title: "Praktek Kerja Lapangan di Universitas Putra Indonesia YPTK Padang",
         duration: "Mar 2023 - Jun 2023",

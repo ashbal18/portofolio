@@ -6,7 +6,7 @@ export default function About() {
     <div
     className="min-h-screen bg-gray-200 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 w-full"
     style={{
-      backgroundImage: "url(/bgwhite2.jpg)",
+      backgroundImage: "url(/bgwhite3.webp)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
@@ -19,7 +19,7 @@ export default function About() {
           src="/profile.jpg"
           alt="foto"
           width={500}
-          height={500}
+          height={800}
           className="w-40 h-40 md:w-80 md:h-80 rounded-full shadow-lg"
         />
       </div>
