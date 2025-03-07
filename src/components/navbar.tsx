@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import Contact from "@/app/contact/page";
-import Home from "@/app/page";
 import Profile from "@/app/about/page";
 import Portofolio from "@/app/portofolio/page";
 import { Menu, X } from "lucide-react";
 import Experience from "@/app/experience/page";
 import Skill from "@/app/skill/page";
 import Testimoni from "@/app/testimoni/page";
+import Home from "@/app/home/page";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ export default function Navbar() {
       </div>
 
       {/* Konten Halaman */}
-      <div className=" p-4 space-y-20 bg-gray-100">
+      <div className="  space-y-20 bg-gray-100">
         <Section id="home" title="">
           <Home />
         </Section>

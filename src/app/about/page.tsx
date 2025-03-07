@@ -3,6 +3,15 @@ import Image from "next/image";
 
 export default function About() {
   return (
+    <div
+    className="min-h-screen bg-gray-200 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 w-full"
+    style={{
+      backgroundImage: "url(/bgwhite2.jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
     <div className="flex flex-col md:flex-row bg-cover bg-center min-h-screen p-4 md:p-10">
       {/* Gambar Profil */}
       <div className="w-full md:w-1/2 flex justify-center items-center p-4">
@@ -69,6 +78,7 @@ export default function About() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }
