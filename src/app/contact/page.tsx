@@ -1,7 +1,7 @@
-
+"use client"
 const Contact = () => {
   return (
-    <div className="bg-yellow-100 text-center py-12 px-6">
+    <div className="bg-gray-100 text-center py-12 px-6">
       <div className="flex flex-col items-center">
         <img
           src="/fotosaya.jpg" 
@@ -26,8 +26,8 @@ const Contact = () => {
         <div className="flex flex-col items-center">
           <div className="text-blue-500 w-12 h-12"></div>
           <h3 className="font-semibold text-lg mt-3">PHONE</h3>
+          <p className="text-gray-500">+62 8127 3802 368</p>
           <p className="text-gray-500">+62 8237 3802 368</p>
-          <p className="text-gray-500">+62 1234 4523 258</p>
         </div>
 
         <div className="flex flex-col items-center">

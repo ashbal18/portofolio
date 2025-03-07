@@ -1,0 +1,62 @@
+"use client"
+import { motion } from "framer-motion";
+
+export default function Portfolio() {
+  return (
+    <div className="container mx-auto p-4 sm:p-6">
+      <h1 className="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Portofolio</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        {/* Proyek 1 */}
+        <motion.div 
+          whileHover={{ scale: 1.05 }} 
+          initial={{ scale: 0.85 }} 
+          animate={{ scale: 1 }} 
+          transition={{ duration: 0.5 }} 
+          className="w-full"
+        >
+          <div className="p-2 sm:p-4 bg-white shadow-lg rounded-xl border border-gray-200 flex flex-col text-xs sm:text-sm">
+            <img src="/images/ecommerce.jpg" alt="E-commerce" className="w-full h-20 sm:h-40 object-cover rounded-lg mb-2 sm:mb-4" />
+            <h2 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 text-center sm:text-left">Platform E-commerce XYZ</h2>
+            <p><strong>Teknologi:</strong> React, Node.js, MongoDB, AWS</p>
+            <p><strong>Situasi:</strong> XYZ Retail ingin memperluas bisnisnya ke e-commerce.</p>
+            <p><strong>Hasil:</strong> Peningkatan penjualan 35% dalam 3 bulan.</p>
+          </div>
+        </motion.div>
+
+        {/* Proyek 2 */}
+        <motion.div 
+          whileHover={{ scale: 1.05 }} 
+          initial={{ scale: 0.85 }} 
+          animate={{ scale: 1 }} 
+          transition={{ duration: 0.5 }} 
+          className="w-full"
+        >
+          <div className="p-2 sm:p-4 bg-white shadow-lg rounded-xl border border-gray-200 flex flex-col text-xs sm:text-sm">
+            <img src="/images/portfolio.jpg" alt="Portfolio Website" className="w-full h-20 sm:h-40 object-cover rounded-lg mb-2 sm:mb-4" />
+            <h2 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 text-center sm:text-left">Website Portofolio</h2>
+            <p><strong>Teknologi:</strong> Next.js, Tailwind CSS, Vercel</p>
+            <p><strong>Situasi:</strong> Membangun website portofolio pribadi.</p>
+            <p><strong>Hasil:</strong> Website responsif & menarik.</p>
+          </div>
+        </motion.div>
+
+        {/* Proyek 3 */}
+        <motion.div 
+          whileHover={{ scale: 1.05 }} 
+          initial={{ scale: 0.85 }} 
+          animate={{ scale: 1 }} 
+          transition={{ duration: 0.5 }} 
+          className="w-full"
+        >
+          <div className="p-2 sm:p-4 bg-white shadow-lg rounded-xl border border-gray-200 flex flex-col text-xs sm:text-sm">
+            <img src="/images/dashboard.jpg" alt="Admin Dashboard" className="w-full h-20 sm:h-40 object-cover rounded-lg mb-2 sm:mb-4" />
+            <h2 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 text-center sm:text-left">Dashboard Analytics</h2>
+            <p><strong>Teknologi:</strong> React, Chart.js, Firebase</p>
+            <p><strong>Situasi:</strong> Perusahaan butuh dashboard analytics.</p>
+            <p><strong>Hasil:</strong> Data real-time untuk keputusan lebih baik.</p>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+}

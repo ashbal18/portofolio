@@ -1,63 +1,84 @@
-"use client"
+"use client";
 
-import { TypeAnimation } from 'react-type-animation';
-import Marquee from "react-fast-marquee"; // Import react-fast-marquee
-
-
+import { TypeAnimation } from "react-type-animation";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+  FaGithub,
+  FaBook,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className='flex flex-col md:flex-row bg-cover bg-center'>
-      <div className="w-full md:w-1/2 flex justify-center items-center">
-        <img src="/fotosaya211.png" alt='foto' width={500} height={500} className="max-w-full h-auto" />
+    <div
+      className="min-h-screen bg-gray-200 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 w-full"
+      style={{
+        backgroundImage: "url(/bgwhite.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Profile Image */}
+      <img
+        src="/fotohome.jpg"
+        alt="foto"
+        width={200}
+        height={100}
+        className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto rounded-full shadow-lg"
+      />
+
+      {/* Header */}
+      <header className="text-center my-6">
+        <TypeAnimation
+          sequence={["Hello🤚 Am Muhammad Ashbal Al Saddam", 20]}
+          wrapper="span"
+          speed={50}
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+          repeat={Infinity}
+        />
+      </header>
+
+      {/* Introduction */}
+      <div className="text-center max-w-2xl px-4">
+        <p className="text-lg sm:text-xl font-bold">
+          I am a Full Stack Web Developer, WordPress Developer & UI/UX Designer
+        </p>
+        <p className="mt-4 text-gray-600 text-sm sm:text-base">
+          I am a dedicated and result-oriented programmer with experience in
+          software development. I have expertise in various programming
+          languages and technologies, and I always strive to provide innovative
+          and efficient solutions.
+        </p>
+        <button className="mt-6 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
+          PROJECTS
+        </button>
       </div>
-      <div className="w-full md:w-1/2 justify-center items-center p-4 md:p-20" style={{ backgroundColor:'beige' }}>
-        <header className='flex justify-center items-center mb-10'>
-          <TypeAnimation
-            sequence={[
-              'Haloo I am Web Development ',
-              500,
-              'Welcome To My Portofolio',
-              500,
-              'have a nice day',
-              500,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: '3em', display: 'inline-block', fontWeight:'bold', color:'gold'}}
-            repeat={Infinity}
-          />
-        </header>
 
-        <h1 className='mb-10 text-2xl md:text-[30px] font-bold text-black'>I am a Full Stack Web Developer, WordPress Development & UI/UX Design</h1>
-        <p className='font-bold text-black text-sm md:text-base'>Saya seorang programmer yang berdedikasi dan berorientasi pada hasil dengan pengalaman dalam pengembangan perangkat lunak. Saya memiliki keahlian dalam berbagai bahasa pemrograman dan teknologi, dan saya selalu berusaha untuk memberikan solusi inovatif dan efisien.</p>
+      {/* Sidebar Social Icons */}
+      <div className="fixed left-2 sm:left-4 top-1/2 transform -translate-y-1/2 space-y-3">
+        {[FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaBook].map(
+          (Icon, index) => (
+            <a
+              key={index}
+              href="#"
+              className="text-gray-600 hover:text-black text-xl sm:text-2xl transition duration-300"
+            >
+              <Icon />
+            </a>
+          )
+        )}
+      </div>
 
-        <Marquee> {
-            <div className="flex justify-center items-center gap-4 md:gap-20 m-4 md:m-10 mt-10"> 
-            <a href="https://www.google.com">
-              <img src="./globe.svg" width={30} alt="Globe" />
-            </a>
-            <a href="https://www.instagram.com/">
-              <img src="./ig.jpg" width={30} alt="Instagram" />
-            </a>
-            <a href="https://www.linkedin.com/feed/">
-              <img src="./linked.png" width={30} alt="LinkedIn" />
-            </a>
-            <a href="https://www.google.com">
-              <img src="./globe.svg" width={30} alt="Globe" />
-            </a>
-            <a href="https://www.instagram.com/">
-              <img src="./ig.jpg" width={30} alt="Instagram" />
-            </a>
-            <a href="https://www.linkedin.com/feed/">
-              <img src="./linked.png" width={30} alt="LinkedIn" />
-            </a>
-            
-          </div>
-          }
-        </Marquee>
-
-      
+      {/* Chat Button */}
+      <div className="fixed bottom-4 right-4 flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+        <span className="text-gray-600 text-sm sm:text-base">
+          Chat with me 👋
+        </span>
+        <div className="bg-purple-600 text-white p-2 sm:p-3 rounded-full">
+          💬
+        </div>
       </div>
     </div>
   );
