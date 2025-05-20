@@ -82,9 +82,14 @@ export default function Home() {
 
       {/* Chat Button */}
       <div className="fixed bottom-4 right-4 flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
-        <span className="text-gray-600 text-sm sm:text-base">
+        <a
+          href="https://wa.me/6281273802368"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 text-sm sm:text-base hover:underline"
+        >
           Chat with me 👋
-        </span>
+        </a>
         <div className="bg-purple-600 text-white p-2 sm:p-3 rounded-full">
           💬
         </div>
